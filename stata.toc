@@ -1,0 +1,4 @@
+v 3
+d Stata repo
+
+p zonotope - Stata plugin for computing the zonotope of a set of generators
