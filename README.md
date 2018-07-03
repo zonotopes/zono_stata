@@ -4,6 +4,15 @@ This repository contains a Stata package for building
 the zonotope of a given set of generators and to compute
 its volume.
 
+## Prerequisites
+Stata version 11 or newer is required.
+Please notice that this package is based on a C++ Stata plugin,
+which has been compiled as a binary file (zonotope2.plugin or zonotope3.plugin,
+depending on the Stata version).
+
+Supported operating systems are: WIN32, WIN64, MacOS64, and LINUX64.
+
+
 ## Getting Started
 
 Opena Stata, then run the following command:
@@ -26,7 +35,7 @@ that your operating system is not supported yet.
 To generate the binary for the zonotope plugin wrapped within zonotope.ado
 file, please follow the intruction provided in this C++ repository:
 
-`github.com/zonotopes/zono_cpp`
+`https://github.com/zonotopes/zono_cpp`
 
 ## Authors
 
