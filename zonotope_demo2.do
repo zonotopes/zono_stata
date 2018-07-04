@@ -17,5 +17,5 @@ infile using `file'
 mkmat V1 V2 V3 V4 V5, matrix(mymat)
 
 noisily zonotope mymat
-clear `mymat'
-noisily display "Zonotope volume: " e(zono_volume)
+* clear `mymat'
+* noisily display "Zonotope volume: " e(zono_volume)
