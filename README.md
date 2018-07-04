@@ -42,20 +42,24 @@ First of all, download (not clone) the repository `https://github.com/zonotopes/
 and unzip it in your personal ado directory as a subfolder named `zono_data`.
 Please notice that the personal ado directory tipically is 
 `C:\ado\personal` on Windows
-`~/ado/personal` on Linux
-`~/Library/Application Support/Stata/ado/personal` on MacOS
+`~/ado/personal` on Linux and 
+`~/Library/Application Support/Stata/ado/personal` on MacOS.
 
 Then Assures that you have created the following directory subtree:
 `C:\ado\personal\zono_data`
 and that the subfolder `zono_data` contains `.txt` data files, such as:
 
-...
 `R3gen10.txt`
-`R3gen10`
+
+`R3gen10.txt`
+
 `R4gen20.txt`
+
 `R3gen10_WP931_YEAR1.txt`
-`R5gen50_Le.txt`
+
 ...
+
+`R5gen50_Le.txt`
 
 
 Then you are done and ready to run the second demo file:
