@@ -9,7 +9,7 @@
 * --------------------------------------------------------------
 set output error
 
-local file "`c(sysdir_personal)'zono_data`c(dirsep)'R5gen100_Le.txt"
+local file "`c(sysdir_personal)'zono_data`c(dirsep)'R5gen50_Le.txt"
 
 noisily display "Opening dataset " "`file'"
 
