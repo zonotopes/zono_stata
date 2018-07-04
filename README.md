@@ -47,8 +47,9 @@ Please notice that the personal ado directory tipically is
 
 Then Assures that you have created the following directory subtree:
 `C:\ado\personal\zono_data`
-and that the subfolders zono_data contains the .txt data files, such as:
+and that the subfolder `zono_data` contains `.txt` data files, such as:
 
+...
 `R3gen10.txt`
 `R3gen10`
 `R4gen20.txt`
