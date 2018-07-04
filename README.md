@@ -26,7 +26,7 @@ Then run:
 ## To run the demo, execute the following do file:
 
 ```
-run zonotope_demo.do
+run zonotope_demo
 ```
 
 ## In case of errors
@@ -36,6 +36,31 @@ To generate the binary for the zonotope plugin wrapped within zonotope.ado
 file, please follow the intruction provided in this C++ repository:
 
 `https://github.com/zonotopes/zono_cpp`
+
+## Test on additional datasets
+First of all, download (not clone) the repository `https://github.com/zonotopes/zono_data`
+and unzip it in your personal folder (`C:\ado\personal' on Windows or `~/home/personal' on linux), 
+as a subfolder named `zono_data'.
+
+Assures that you have created the following directory tree:
+c:\ado\personal\zono_data
+and that the subfolders zono_data contains the .txt data files, such as:
+
+R3gen10.txt
+R3gen10
+R4gen20.txt
+R3gen10_WP931_YEAR1.txt
+R5gen50_Le.txt
+...
+
+Then you are ready to run
+
+```
+run zonotope_demo2
+```
+
+This do file will first load 'C:\ado\personal/zono_data/R4gen20.txt' and compute its volume and other statistics,
+then will do the same on the 50 5-dimensional generators contained in the file 'C:\ado\personal/zono_data/R5gen50_Le.txt' 
 
 ## Authors
 
