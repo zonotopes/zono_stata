@@ -4,6 +4,8 @@ d Stata plugin for computing the zonotope of a set of generators
 
 F zonotope.ado
 F zonotope.sthlp
+F zonotope_demo.do
+F zonotope_demo2.do
 G WIN bin/WIN/zonostata2.plugin
 G WIN bin/WIN/zonostata3.plugin
 G WIN64A bin/WIN64A/zonostata2.plugin
