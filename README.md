@@ -75,7 +75,7 @@ then will do the same on the 50 5-dimensional generators contained in the file `
 ## Authors
 
 * **Federico Ponchio** - *Initial work in C++* - [VisLab](http://vcg.isti.cnr.it/~ponchio/)
-* **Marco Cococcioni** - *The author of the R porting and owner of this repository* - [Cococcioni @ University Of Pisa](http://www.iet.unipi.it/m.cococcioni/)
+* **Marco Cococcioni** - *The author of the Stata porting and owner of this repository* - [Cococcioni @ University Of Pisa](http://www.iet.unipi.it/m.cococcioni/)
 
 
 ## License
