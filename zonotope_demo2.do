@@ -52,10 +52,8 @@ noisily zonotope mymat
 
 clear all
 
-noisily display "Loading a set of 10 generators in 3 dimensions from web"
-noisily display "----------------------------------------------"
-
-noisily display "Loading a dataset from stata-press.com website"
+noisily display "Loading a set of 10 generators in 3 dimensions from web (stata-press.com)"
+noisily display "--------------------------------------------------------------------------"
 
 use http://www.stata-press.com/data/r11/test
 
@@ -65,6 +63,10 @@ mkmat x y z, matrix(mymat)
 
 noisily zonotope mymat
 * clear `mymat'
-noisily display "Known volume for this dataset is 17754"
+noisily display "(The Known volume for this dataset is 17754)"
 
+* Below an example on how to select on a subset of columns and rows
+* (uncomment next to lines to see it at work)
 
+* mkmat y z in 2/6, matrix myreducedmat
+* noisily zonotope myreducedmat
