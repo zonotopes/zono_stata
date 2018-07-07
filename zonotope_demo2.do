@@ -52,19 +52,19 @@ noisily zonotope mymat
 
 clear all
 
-noisily display "Loading another set of 10 generators in 3 dimensions"
+noisily display "Loading a set of 10 generators in 3 dimensions from web"
 noisily display "----------------------------------------------"
 
-noisily display "Loading data from stata website"
+noisily display "Loading a dataset from stata-press.com website"
 
 use http://www.stata-press.com/data/r11/test
 
-noisily describe
+noisily list
 
 mkmat x y z, matrix(mymat)
 
 noisily zonotope mymat
 * clear `mymat'
-* noisily display "Known volume for this dataset is 17754"
+noisily display "Known volume for this dataset is 17754"
 
 
