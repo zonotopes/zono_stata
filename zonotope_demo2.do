@@ -57,7 +57,7 @@ noisily display "----------------------------------------------"
 
 noisily display "Loading data from stata website"
 
-use http://www.stata-press.com/data/r13/test
+use http://www.stata-press.com/data/r11/test
 
 noisily describe
 
