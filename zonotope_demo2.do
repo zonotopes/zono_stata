@@ -47,3 +47,24 @@ mkmat V1 V2 V3 V4 V5, matrix(mymat)
 noisily zonotope mymat
 * clear `mymat'
 * noisily display "Zonotope volume: " e(zono_volume)
+
+
+
+clear all
+
+noisily display "Loading another set of 10 generators in 3 dimensions"
+noisily display "----------------------------------------------"
+
+noisily display "Loading data from stata website"
+
+use http://www.stata-press.com/data/r13/test
+
+noisily describe
+
+mkmat x y z, matrix(mymat)
+
+noisily zonotope mymat
+* clear `mymat'
+* noisily display "Known volume for this dataset is 17754"
+
+
