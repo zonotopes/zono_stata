@@ -111,5 +111,5 @@ either expressed or implied, of the Zonotopes project.
 
 ## Acknowledgments
 
-* This work has been funded by professors Marco Grazzi and Giovanni Dosi
-* from Scuola Superiore S.Anna, Pisa, Italy
+This work has been funded by professors Marco Grazzi and Giovanni Dosi
+from Scuola Superiore S.Anna, Pisa, Italy
