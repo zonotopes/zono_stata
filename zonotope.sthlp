@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 1.2  02jul2018}{...}
+{* *! version 1.2  20jul2018}{...}
 {title:Title}
 Welcome to the help for the zonotope command.
 
