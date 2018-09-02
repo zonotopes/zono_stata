@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 1.2  20jul2018}{...}
+{* *! version 1.2  02sep2018}{...}
 {title:Title}
 Welcome to the help for the zonotope command.
 
@@ -7,14 +7,21 @@ Welcome to the help for the zonotope command.
 {title:Syntax}
 
 {p 8 16 2}
-{cmd:zonotope} {in} dataset
+{cmd:zonotope} {varlist} {if} {in}
 
 {title:Description}
 
-This function builds the zonotope of a dataset, where the dataset is 
-a matrix containing the set of generators. Each row is a distinct generator. 
-The number of columns d is the dimension where the zonotope lies. 
-In particular, the first (d-1) columns are the input of the relation 
+This function builds the zonotope of a set of variable,
+which constitute the set of generators.
+The last variable is interpreted as the output variable
+(this distinction makes only sense in economic applications,
+for instance when measuring the heterogeneity of a set of firms).
+
+The r-th generator is associated with the r-th observation of each
+variable, when all the variables are considered together.
+
+The number of variables d is the dimension where the zonotope lies. 
+As mentioned above, the first (d-1) columns are the input of the relation 
 we want to model, while the last if the output variable.
 
 
