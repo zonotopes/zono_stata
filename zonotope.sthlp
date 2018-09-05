@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 1.2  02sep2018}{...}
+{* *! version 1.2  05sep2018}{...}
 {title:Title}
 Welcome to the help for the zonotope command.
 
@@ -11,34 +11,48 @@ Welcome to the help for the zonotope command.
 
 {title:Description}
 
-This function builds the zonotope of a set of variable,
-which constitute the set of generators.
-The last variable is interpreted as the output variable
+This function builds the zonotope of a set of variables,
+where the latter contains a set of generators.
+
+The last variable is interpreted as the output
 (this distinction makes only sense in economic applications,
 for instance when measuring the heterogeneity of a set of firms).
 
-The r-th generator is associated with the r-th observation of each
-variable, when all the variables are considered together.
+The r-th generator is a D-dimensional vector (being D the number 
+of variables) containing the r-th observation of each
+variable.
 
-The number of variables d is the dimension where the zonotope lies. 
-As mentioned above, the first (d-1) columns are the input of the relation 
-we want to model, while the last if the output variable.
+The number of variables D is thus the dimension where the zonotope lies. 
+As mentioned above, the first (D-1) columns are the input of the relation 
+we want to model, while the last is the output variable.
 
+The number of variables must be greater of equal to 2.
 
 The function returns the volume of the zonotope,
 in the scalar variable e(zono_volume).
 
-Furthermore, it prints on screen additional statistics,
+Furthermore, the zonotope command prints on screen additional statistics,
 useful in economic studies of heterogeneity, 
 such as the diagonal of the zonotope, the norm of the diagonal, 
 the Gini index of the zonotope, etc.
 
 {title:Remarks}
 
-For detailed information on the computed zonotope statistics, 
-see the stata journal paper associated to the zonotope command.
+The zonotope command is an .ado program that calls a Stata plugin,
+which is based on C++ source code.
 
-In addition, you can refer to the following paper:
+The following GitHub repository contains the Stata command
+source code:
+
+{browse "https://github.com/zonotopes/zono_stata"}
+
+while the C++ source to generate the plugin can be found here:
+
+{browse "https://github.com/zonotopes/zono_cpp"}
+
+
+Further information about applications of the zonotope
+command to Economics can be found here:
 
 {pstd}
 G.  Dosi,  L. Marengo,  M.  Grazzi,  and  S.  Settepanella.  2016.
