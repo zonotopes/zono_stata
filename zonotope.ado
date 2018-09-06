@@ -28,8 +28,9 @@ program zonotope, eclass
   display "-----------------------------------------------------------------------"
   display "... the computation of the volume has started (it can take a while) ..."
 
-  plugin call _zonotope, generators volume  
+  mata: displayflush()
 
+  plugin call _zonotope, generators volume  
 
   ereturn local zono_volume = volume
 
