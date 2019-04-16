@@ -32,6 +32,6 @@ program zonotope, eclass
 
   plugin call _zonotope, generators volume  
 
-  ereturn local zono_volume = volume
+  ereturn scalar zono_volume = volume
 
 end
