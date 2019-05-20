@@ -1,45 +1,41 @@
 {smcl}
-{* *! version 1.2  05sep2018}{...}
+{* *! version 1.3  31may2019}{...}
 {title:Title}
-Welcome to the help for the zonotope command.
+Welcome to the help for the {cmd:zonotope} command.
 
 {marker syntax}{...}
 {title:Syntax}
 
 {p 8 16 2}
-{cmd:zonotope} {varlist} {if} {in}
+{cmd:zonotope} {varlist} [ if expr ] [ in range ]  [, verbose]
 
 {title:Description}
 
-This function builds the zonotope of a set of variables,
-where the latter contains a set of generators.
+This function builds the zonotope from a list of (l+1) vector variables,
+where the first l are the input ones and the (l+1)-th the output one.
 
-The last variable is interpreted as the output
-(this distinction makes only sense in economic applications,
-for instance when measuring the heterogeneity of a set of firms).
+All the variables must have the same length.
+The r-th value of each variables constitute the r-th 'generator',
+i.e., the r-th vector of the observations.
 
-The r-th generator is a D-dimensional vector (being D the number 
-of variables) containing the r-th observation of each
-variable.
+The command computes the volume and other quantities of the zonotope
+associated to this set of r generators in an (l+1) dimensional space.
 
-The number of variables D is thus the dimension where the zonotope lies. 
-As mentioned above, the first (D-1) columns are the input of the relation 
-we want to model, while the last is the output variable.
+The number of variables must be greater or equal to 2.
 
-The number of variables must be greater of equal to 2.
+The function returns the volume of the zonotope in the scalar 
+variable r(S1), plus additional statistics in r(S2)...r(S8).
 
-The function returns the volume of the zonotope,
-in the scalar variable e(zono_volume).
+It also returns the elapsed time, in minutes, in the r(etMIN) 
+variable, and two vectors: r(diagonal) and r(tangents).
 
-Furthermore, the zonotope command prints on screen additional statistics,
-useful in economic studies of heterogeneity, 
-such as the diagonal of the zonotope, the norm of the diagonal, 
-the Gini index of the zonotope, etc.
+Finally, the zonotope command prints on screen  all the computed 
+quantities, when it is called with the 'verbose' option.
 
 {title:Remarks}
 
-The zonotope command is an .ado program that calls a Stata plugin,
-which is based on C++ source code.
+The zonotope command is an .ado program that calls a Stata plugin
+written using the C++ programming language.
 
 The following GitHub repository contains the Stata command
 source code:
@@ -54,11 +50,9 @@ while the C++ source to generate the plugin can be found here:
 Further information about applications of the zonotope
 command to Economics can be found here:
 
-{pstd}
-G.  Dosi,  L. Marengo,  M.  Grazzi,  and  S.  Settepanella.  2016.
-Production Theory:  Accounting for Firm Heterogeneity  and  Technical  Change.
-The Journal of Industrial Economics LXIV: 875-907.
-
+{pstd} G.  Dosi,  L. Marengo,  M.  Grazzi,  and  S.  Settepanella.  2016.
+Production Theory:  Accounting for Firm Heterogeneity  and  Technical
+Change. The Journal of Industrial Economics LXIV: 875-907.
 
 {title:Examples}
 
