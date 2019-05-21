@@ -7,7 +7,7 @@ Welcome to the help for the {cmd:zonotope} command.
 {title:Syntax}
 
 {p 8 16 2}
-{cmd:zonotope} {varlist} [ if expr ] [ in range ]  [, verbose]
+{cmd:zonotope} {varlist} {ifin} [{cmd:,} {opt v:erbose}]
 
 {title:Description}
 
