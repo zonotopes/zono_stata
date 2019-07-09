@@ -17,7 +17,7 @@ Supported operating systems are: WIN32, WIN64, MacOS64, and LINUX64.
 
 Opena Stata, then run the following command:
 
-`net cd http://www.iet.unipi.it/m.cococcioni/zono_stata`
+`net cd http://www.iet.unipi.it/m.cococcioni/zono_stata_1p3`
 
 Then run:
 
