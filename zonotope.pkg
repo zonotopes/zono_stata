@@ -13,6 +13,6 @@ G WIN64A bin/WIN64A/zonostata3.plugin
 G LINUX64 bin/LINUX64/zonostata2.plugin
 G LINUX64 bin/LINUX64/zonostata3.plugin
 G MACINTEL64 bin/MACINTEL64/zonostata2.plugin
-G MACINTEL64 bin/MACINTEL64/zonostata2.plugin
+G MACINTEL64 bin/MACINTEL64/zonostata3.plugin
 h zonostata2.plugin
 h zonostata3.plugin
