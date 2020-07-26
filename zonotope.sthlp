@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 1.3  31may2019}{...}
+{* *! version 1.3  26jul2020}{...}
 {title:Title}
 Welcome to the help for the {cmd:zonotope} command.
 
@@ -56,6 +56,6 @@ Change. The Journal of Industrial Economics LXIV: 875-907.
 
 {title:Examples}
 
-{phang}{cmd:. run zonotope_demo}
+{phang}{cmd:. run `c(sysdir_plus)'\z\zonotope_demo}
 
-{phang}{cmd:. run zonotope_demo2}
+{phang}{cmd:. run `c(sysdir_plus)'\z\zonotope_demo2}
