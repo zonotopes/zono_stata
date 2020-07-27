@@ -24,7 +24,7 @@ noisily display ""
 noisily display "Loading a set of 20 generators in 4 dimensions"
 noisily display "----------------------------------------------"
 
-local file "`c(sysdir_personal)'zono_data`c(dirsep)'R4gen20.txt"
+local file "`c(sysdir_plus)'`c(dirsep)'z`c(dirsep)'zono_data`c(dirsep)'R4gen20.txt"
 
 noisily display "Opening dataset " "`file'"
 
@@ -47,7 +47,7 @@ noisily display ""
 noisily display "Loading a set of 50 generators in 5 dimensions"
 noisily display "----------------------------------------------"
 
-local file "`c(sysdir_personal)'zono_data`c(dirsep)'R5gen50_Le.txt"
+local file "`c(sysdir_plus)'`c(dirsep)'z`c(dirsep)'zono_data`c(dirsep)'R5gen50_Le.txt"
 
 noisily display "Opening dataset " "`file'"
 
