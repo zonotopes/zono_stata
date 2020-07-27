@@ -41,12 +41,12 @@ file, please follow the intruction provided in this C++ repository:
 First of all, download (not clone) the repository `https://github.com/zonotopes/zono_data`
 and unzip it in your personal ado directory as a subfolder named `zono_data`.
 Please notice that the personal ado directory tipically is 
-`C:\ado\personal` on Windows
-`~/ado/personal` on Linux and 
-`~/Library/Application Support/Stata/ado/personal` on MacOS.
+`C:\ado\plus` on Windows
+`~/ado/plus` on Linux and 
+`~/Library/Application Support/Stata/ado/plus` on MacOS.
 
-Then Assures that you have created the following directory subtree:
-`C:\ado\personal\zono_data`
+Then assures that you have created the following directory subtree:
+`C:\ado\plus\zono_data`
 and that the subfolder `zono_data` contains `.txt` data files, such as:
 
 `R3gen10.txt`
@@ -69,8 +69,8 @@ Then you are done and ready to run the second demo file:
 run `c(sysdir_plus)'\z\zonotope_demo2
 ```
 
-This do file will first load `C:\ado\personal/zono_data/R4gen20.txt` and compute its volume and other statistics,
-then will do the same on the 50 5-dimensional generators contained in the file `C:\ado\personal/zono_data/R5gen50_Le.txt` 
+This do file will first load `C:\ado\plus\zono_data\R4gen20.txt` and compute its volume and other statistics,
+then will do the same on the 50 5-dimensional generators contained in the file `C:\ado\plus\zono_data\R5gen50_Le.txt` 
 
 ## Authors
 
