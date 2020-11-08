@@ -21,7 +21,7 @@ Opena Stata, then run the following command:
 
 Then run:
 
-`net install zonotope, replace`
+`net install zonotope, replace force`
 
 ## To run the demo, execute the following do file:
 
