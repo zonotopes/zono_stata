@@ -1,8 +1,8 @@
 if c(stata_version) < 15 {
-    local filename = "zonostata2.plugin"
+    local filename = "z/zonostata2.plugin"
 }
 else {
-    local filename = "zonostata3.plugin"
+    local filename = "z/zonostata3.plugin"
 }
 
 program _zonotope, plugin using (`filename')
