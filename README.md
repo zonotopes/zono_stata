@@ -21,12 +21,12 @@ Opena Stata, then run the following command:
 
 Then run:
 
-`net install zonotope, replace`
+`net install zonotope, replace force`
 
 ## To run the demo, execute the following do file:
 
 ```
-run zonotope_demo
+run `c(sysdir_plus)'\z\zonotope_demo
 ```
 
 ## In case of errors
@@ -45,7 +45,7 @@ Please notice that the personal ado directory tipically is
 `~/ado/personal` on Linux and 
 `~/Library/Application Support/Stata/ado/personal` on MacOS.
 
-Then Assures that you have created the following directory subtree:
+Then assures that you have created the following directory subtree:
 `C:\ado\personal\zono_data`
 and that the subfolder `zono_data` contains `.txt` data files, such as:
 
@@ -66,7 +66,7 @@ and that the subfolder `zono_data` contains `.txt` data files, such as:
 Then you are done and ready to run the second demo file:
 
 ```
-run zonotope_demo2
+run `c(sysdir_plus)'\z\zonotope_demo2
 ```
 
 This do file will first load `C:\ado\personal/zono_data/R4gen20.txt` and compute its volume and other statistics,
