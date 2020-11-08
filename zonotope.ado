@@ -47,7 +47,7 @@ program zonotope, rclass
   
   mata: displayflush()    
 
-  plugin call _zonotope, gen mStats
+  plugin call _zonotope, gen tangents mStats
   
   display as result "DONE!"
   display as text "------------------------------------------------------------------------"  
