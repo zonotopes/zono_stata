@@ -75,7 +75,7 @@ infile using `file'
 
 noisily zonotope V1 V2 V3 V4, verbose
 
-noisily display "(The Known volume for this dataset is 142.997)"
+noisily display "(The Known volume for this dataset is 428.991)"
 
 
 
@@ -98,5 +98,5 @@ infile using `file'
 
 noisily zonotope V1 V2 V3 V4 V5, verbose
 
-noisily display "(The Known volume for this dataset is 5.14384e+010)"
+noisily display "(The Known volume for this dataset is 6.17261e+11)"
 
