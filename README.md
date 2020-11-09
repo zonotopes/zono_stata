@@ -26,7 +26,7 @@ Then run:
 ## To run the demo, execute the following do file:
 
 ```
-run `c(sysdir_plus)'\z\zonotope_demo
+run "`c(sysdir_plus)'\z\zonotope_demo"
 ```
 
 ## In case of errors
@@ -66,7 +66,7 @@ and that the subfolder `zono_data` contains `.txt` data files, such as:
 Then you are done and ready to run the second demo file:
 
 ```
-run `c(sysdir_plus)'\z\zonotope_demo2
+run "`c(sysdir_plus)'\z\zonotope_demo2"
 ```
 
 This do file will first load `C:\ado\personal/zono_data/R4gen20.txt` and compute its volume and other statistics,
