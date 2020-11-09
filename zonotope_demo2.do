@@ -33,7 +33,7 @@ noisily list
 
 noisily zonotope x y z, verbose
 
-noisily display "(The Known volume for this dataset is 17754)"
+noisily display "(the known volume for this dataset is 17754)"
 
 noisily display ""
 noisily display ""
@@ -43,7 +43,7 @@ noisily display ""
 noisily display "Now an example on how to use the 'if' condition (x > 3):"
 noisily zonotope x y z if x > 3, verbose
 
-noisily display "(The Known volume for this dataset is 4818)"
+noisily display "(the known volume for this dataset is 4818)"
 
 
 
@@ -54,7 +54,7 @@ noisily display ""
 
 noisily display "Finally, an example on how to use the 'in' condition (in 2/7):"
 noisily zonotope x y z in 2/7, verbose
-noisily display "(The Known volume for this dataset is 858)"
+noisily display "(the known volume for this dataset is 858)"
 
 
 clear all
@@ -75,7 +75,7 @@ infile using `file'
 
 noisily zonotope V1 V2 V3 V4, verbose
 
-noisily display "(The Known volume for this dataset is 428.991)"
+noisily display "(the known volume for this dataset is 428.991)"
 
 
 
@@ -98,5 +98,5 @@ infile using `file'
 
 noisily zonotope V1 V2 V3 V4 V5, verbose
 
-noisily display "(The Known volume for this dataset is 6.17261e+11)"
+noisily display "(the known volume for this dataset is 6.17261e+11)"
 
