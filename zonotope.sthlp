@@ -69,7 +69,7 @@ Technical Change". The Journal of Industrial Economics LXIV: 875-907.
 
 {title:Examples}
 
-{phang}{cmd:. run `c(sysdir_plus)'/z/zonotope_demo}
+{phang}{cmd:. run "`c(sysdir_plus)'/z/zonotope_demo"}
 
-{phang}{cmd:. run `c(sysdir_plus)'/z/zonotope_demo2}
+{phang}{cmd:. run "`c(sysdir_plus)'/z/zonotope_demo2"}
 
