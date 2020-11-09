@@ -23,9 +23,33 @@ quietly svmat Z
 
 noisily zonotope Z1 Z2 Z3
 
-noisily display "(enter 'list' to display the three variables used as generators)"
+noisily display "Elapsed time (MIN): " r(etMIN)
 noisily display "-----------------------------------------------------------------------"
 
-* noisily display "Zonotope volume: " e(zono_volume)
+noisily display "OUTPUT VECTORS"
+noisily display "Diagonal: "
+noisily matrix list diagonal
+
+noisily display " "
+noisily display "Tangents (between each input generator and the input space):"
+noisily matrix list tangents
+
+noisily display " "
+noisily display "-----------------------------------------------------------------------"
+noisily display "OUTPUT STATISTICS"
+noisily display "S1: Total volume: " r(S1)
+noisily display "S2: Diagonal norm: " r(S2)
+noisily display "S3: Sum of squared norms: " r(S3)
+noisily display "S4: Gini index: " r(S4)
+noisily display "S5: Tangent of angle btw. diagonal and the input plane: " r(S5)
+noisily display "S6: Cosine against output: " r(S6)
+noisily display "S7: Cosine of proj. of diagonal on input plane with x axis: " r(S7)
+noisily display "S8: Volume against the cube of the norm of the diagonal: " r(S8)     
+noisily display "-----------------------------------------------------------------------"
+noisily display "(the known volume for this dataset is 20.194763)"
+
+* noisily display "Number of generators: " r(nrow)
+* noisily display "Number of columns: " r(ncol)
+
 
 * clear Z
