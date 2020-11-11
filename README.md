@@ -43,7 +43,7 @@ and unzip it in your personal ado directory as a subfolder named `zono_data`.
 Please notice that the personal ado directory tipically is 
 `C:\ado\plus` on Windows
 `~/ado/plus` on Linux and 
-`~/Library/Application Support/Stata/ado/plus` on MacOS.
+`"~/Library/Application Support/Stata/ado/plus"` on MacOS.
 
 Then assures that you have created the following directory subtree:
 `C:\ado\plus\z\zono_data`
