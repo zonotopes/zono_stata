@@ -33,7 +33,7 @@ noisily list
 
 noisily zonotope x y z, verbose
 
-noisily display "(the known volume for this dataset is 17754)"
+noisily display "(The Known volume for this dataset is 17754)"
 
 noisily display ""
 noisily display ""
@@ -42,8 +42,7 @@ noisily display ""
 
 noisily display "Now an example on how to use the 'if' condition (x > 3):"
 noisily zonotope x y z if x > 3, verbose
-
-noisily display "(the known volume for this dataset is 4818)"
+*noisily display "(The Known volume for this dataset is 4818)"
 
 
 
@@ -54,49 +53,51 @@ noisily display ""
 
 noisily display "Finally, an example on how to use the 'in' condition (in 2/7):"
 noisily zonotope x y z in 2/7, verbose
-noisily display "(the known volume for this dataset is 858)"
+* noisily display "(The Known volume for this dataset is 858)"
+
+* WHAT FOLLOW ARE ADDITIONAL TEST, THAT REQUIRE THE DOWNLOAD OF zono_data
+* FROM https://github.com/zonotopes/zono_data
+
+* clear all
+
+* noisily display ""
+* noisily display ""
+* noisily display "Example D"
+* noisily display ""
+
+* noisily display "Loading a set of 20 generators in 4 dimensions"
+* noisily display "----------------------------------------------"
+
+* local file "`c(sysdir_plus)'zono_data/R4gen20.txt"
+
+* noisily display "Opening dataset " "`file'"
+
+* infile using `file'
+
+* noisily zonotope V1 V2 V3 V4, verbose
+
+* noisily display "(The Known volume for this dataset is 428.991)"
 
 
-clear all
 
-noisily display ""
-noisily display ""
-noisily display "Example D"
-noisily display ""
+* clear all
 
-noisily display "Loading a set of 20 generators in 4 dimensions"
-noisily display "----------------------------------------------"
-
-local file "`c(sysdir_plus)'zono_data/R4gen20.txt"
-
-noisily display "Opening dataset " "`file'"
-
-infile using `file'
-
-noisily zonotope V1 V2 V3 V4, verbose
-
-noisily display "(the known volume for this dataset is 428.991)"
+* noisily display ""
+* noisily display ""
+* noisily display "Example F"
+* noisily display ""
 
 
+* noisily display "Loading a set of 50 generators in 5 dimensions"
+* noisily display "----------------------------------------------"
 
-clear all
+* local file "`c(sysdir_plus)'zono_data/R5gen50_Le.txt"
 
-noisily display ""
-noisily display ""
-noisily display "Example F"
-noisily display ""
+* noisily display "Opening dataset " "`file'"
 
+* infile using `file'
 
-noisily display "Loading a set of 50 generators in 5 dimensions"
-noisily display "----------------------------------------------"
+* noisily zonotope V1 V2 V3 V4 V5, verbose
 
-local file "`c(sysdir_plus)'zono_data/R5gen50_Le.txt"
-
-noisily display "Opening dataset " "`file'"
-
-infile using `file'
-
-noisily zonotope V1 V2 V3 V4 V5, verbose
-
-noisily display "(the known volume for this dataset is 6.17261e+11)"
+* noisily display "(The Known volume for this dataset is 6.17261e+11)"
 
